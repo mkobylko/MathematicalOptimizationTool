@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="653.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.mmdo.controllers.FirstWindowController">
+   <children>
+      <Label layoutX="28.0" layoutY="67.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="130.0" text="Кількість змінних:" AnchorPane.leftAnchor="28.0" />
+      <Label layoutX="28.0" layoutY="116.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="158.0" text="Кількість обмежень:" />
+      <Button fx:id="generateButton" layoutX="186.0" layoutY="169.0" mnemonicParsing="false" text="Згенерувати" textFill="#304a59" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="189.0" />
+      <ChoiceBox fx:id="quantityOfInequalitiesChBox" layoutX="388.0" layoutY="122.0" prefHeight="28.0" prefWidth="60.0" AnchorPane.rightAnchor="22.399999999999977" />
+      <ChoiceBox fx:id="quantityOfVariablesChBox" layoutX="388.0" layoutY="73.0" prefHeight="28.0" prefWidth="60.0" AnchorPane.rightAnchor="22.19999999999999" />
+
+      <AnchorPane fx:id="generationPanel" layoutX="-5.0" layoutY="233.0" prefHeight="419.0" prefWidth="475.0" style="-fx-background-color: #A4C6D9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox fx:id="VBoxWithInequalities" layoutX="19.0" layoutY="106.0" prefHeight="235.0" prefWidth="451.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <children>
+                  <HBox fx:id="hBoxes" layoutX="19.0" layoutY="106.0" prefHeight="48.0" prefWidth="451.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               
+            </HBox>
+               </children>
+            </VBox>
+            <Label layoutX="9.0" layoutY="14.0" text="Цільова функція" textFill="#0b2433" AnchorPane.leftAnchor="9.0" />
+            <Label layoutX="23.0" layoutY="46.0" text="F(x) = " AnchorPane.leftAnchor="23.0" />
+            <HBox fx:id="hBoxObjFunc" layoutX="67.0" layoutY="31.0" prefHeight="48.0" prefWidth="392.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="11.0" />
+            <Label layoutX="14.0" layoutY="88.0" text="Значення системи обмежень:" textFill="#0b2433" AnchorPane.leftAnchor="14.0" />
+            <Button fx:id="calculateButton" layoutX="190.0" layoutY="363.0" mnemonicParsing="false" text="Розрахувати" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="187.0" />
+            </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
